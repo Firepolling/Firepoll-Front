@@ -17,7 +17,7 @@ const PollVote = (props) =>{
     const [title,setTitle] = useState("Poll Title")
     const [cVote,setCVote] = useState("");
     //const pollID = props.pollID
-    const pollID = "8IeU2scRXtZKuVYvtW8M-"
+    const pollID = "zEHE9ePvZRjY8fLQ8edPc"
     const updateText = (id,text) =>{
         let newTopics = [...topics]
         newTopics[id] = text

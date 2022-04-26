@@ -18,7 +18,7 @@ const VoteItem = ({id,option,changeChoice}) =>{
     
     return(
         <div className="pill-shape">
-            <button className='Vote-btn' onClick={changeChoice(id)}>{option}</button>
+            <button className='Vote-btn' onClick={() => changeChoice(id)}>{option}</button>
         </div>
     )
     
