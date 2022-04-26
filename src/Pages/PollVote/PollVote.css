@@ -26,21 +26,23 @@
 
 }
 
-.button-holder {
+.submit-area {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 5%;
 }
+
+
 
 button {
     color: black;
     height: 4vmin;
-    aspect-ratio: 8/2;
     border-radius: 2vmax;
     border: black 3px solid;
     font-size: 2vmin;
     background-color: transparent;
-
 }
 
 button:hover {
@@ -64,10 +66,10 @@ button:hover {
 .Vote-btn:active{
     background-color: black;
     color: white;
-
+}
+.current{
+    margin: 0;
 }
 
-.selected{
-    background-color: black;
-    color: #db4150;
-}
+
+

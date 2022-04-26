@@ -2,6 +2,7 @@ import './PollVote.css'
 import {VoteItem} from '../Components/PollItem'
 import PillBody from '../Components/Pill-Body'
 import { useState,useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 
 const axios = require('axios').default;
 
@@ -15,15 +16,9 @@ const ax_instance = axios.create({
 const PollVote = (props) =>{
     const [topics,setTopics] = useState(["",""])
     const [title,setTitle] = useState("Poll Title")
+    const {pollID} = useParams()
     const [cVote,setCVote] = useState("");
-    //const pollID = props.pollID
-    const pollID = "zEHE9ePvZRjY8fLQ8edPc"
-    const updateText = (id,text) =>{
-        let newTopics = [...topics]
-        newTopics[id] = text
-        setTopics(newTopics)
-        console.log(topics)
-    }
+    
     const changeChoice = (id) =>{
         setCVote(id);
         console.log(id)
@@ -50,11 +45,14 @@ const PollVote = (props) =>{
                     return (<VoteItem option={text} id= {index}  changeChoice = {changeChoice} key={index}/>)
                     })}
                 </div>
-            <div className="button-holder">
+            <div className="submit-area">
                 <div className="current">
                     <h3>{topics[cVote]}</h3>
                 </div>
-                <button>Submit</button>
+                <div className="submit-button">
+                    <button>Submit and see results</button>
+                </div>
+                
             </div> 
         </PillBody>
     )

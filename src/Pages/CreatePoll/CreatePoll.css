@@ -33,8 +33,7 @@
     justify-content: center;
     gap: 5%;
 }
-
-button{
+.button-holder button {
     color: black;
     height: 4vmin;
     aspect-ratio: 8/2;
@@ -42,10 +41,9 @@ button{
     border: black 3px solid;
     font-size: 2vmin;
     background-color: transparent;
-
 }
 
-button:hover{
+.button-holder button:hover{
     color: white;
     background-color: black;
     border: 0;

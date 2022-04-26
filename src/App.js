@@ -8,7 +8,7 @@ function App() {
     <main>
       <Routes>
         <Route path='/' element ={<CreatePoll />}/>
-        <Route path='/vote' element={<VotePoll/>}/>
+        <Route path='/vote/:pollID' element={<VotePoll/>}/>
       </Routes>
     </main>
   );
