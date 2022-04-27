@@ -16,6 +16,7 @@
     font-size: 150%;
     text-align: center;
     background: transparent;
+    outline: none;
 }
 
 .options {
@@ -36,7 +37,6 @@
 .button-holder button {
     color: black;
     height: 4vmin;
-    aspect-ratio: 8/2;
     border-radius: 2vmax;
     border: black 3px solid;
     font-size: 2vmin;
@@ -47,4 +47,8 @@
     color: white;
     background-color: black;
     border: 0;
+}
+
+.pill-input{
+    outline: none;
 }

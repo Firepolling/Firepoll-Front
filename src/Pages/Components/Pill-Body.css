@@ -6,6 +6,13 @@
     flex-grow: 1;
 }
 
+.poll-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .poll-header {
     height: 10vh;
 }
@@ -18,9 +25,7 @@
     align-items: center;
 }
 
-.poll-footer {
-    height: 18vh
-}
+
 
 .pill-body {
     height: 90vmin;

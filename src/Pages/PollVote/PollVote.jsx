@@ -3,6 +3,7 @@ import {VoteItem} from '../Components/PollItem'
 import PillBody from '../Components/Pill-Body'
 import { useState,useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 const axios = require('axios').default;
 
@@ -14,10 +15,11 @@ const ax_instance = axios.create({
 
 
 const PollVote = (props) =>{
+    let navigate = useNavigate();
     const [topics,setTopics] = useState(["",""])
     const [title,setTitle] = useState("Poll Title")
     const {pollID} = useParams()
-    const [cVote,setCVote] = useState("");
+    const [cVote,setCVote] = useState(-1);
     
     const changeChoice = (id) =>{
         setCVote(id);
@@ -35,6 +37,12 @@ const PollVote = (props) =>{
         fetchData();
     },[])
 
+    const postVote = () =>{
+        if(cVote !== -1){
+            navigate(`/results/${pollID}`,{replace: true})
+        }
+        
+    }
     return(
         <PillBody>
             <div className="poll-title">
@@ -50,9 +58,13 @@ const PollVote = (props) =>{
                     <h3>{topics[cVote]}</h3>
                 </div>
                 <div className="submit-button">
-                    <button>Submit and see results</button>
+                    <div className="">
+                        <button onClick={postVote}>Submit and see results</button>
+                    </div>
+                    <div className="">
+                        <button onClick={()=> navigate(`/results/${pollID}`,{replace: true})}>See Results w/o Voting</button>
+                    </div>
                 </div>
-                
             </div> 
         </PillBody>
     )

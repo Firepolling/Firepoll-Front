@@ -34,14 +34,17 @@
     gap: 5%;
 }
 
-
+.submit-button{
+    display: flex;
+    gap: 1vmin;
+}
 
 button {
     color: black;
     height: 4vmin;
     border-radius: 2vmax;
     border: black 3px solid;
-    font-size: 2vmin;
+    font-size: 1.8vmin;
     background-color: transparent;
 }
 

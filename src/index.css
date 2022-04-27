@@ -7,9 +7,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: rgb(2, 0, 36);
   background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(48, 48, 48, 1) 100%);
+  --main-color: #db4105;
+  --secondary-color: #000;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: orange;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid orange;
+  /* creates padding around scroll thumb */
+}
+body {
+  scrollbar-width: auto;
+  /* "auto" or "thin" */
+  scrollbar-color: var(--secondary-color) transparent;
+  /* scroll thumb and track */
 }

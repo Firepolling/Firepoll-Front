@@ -1,0 +1,82 @@
+.results-data{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.bar-line{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 2%;
+    
+}
+
+.bar-title{
+    width: 10%;
+    text-align: right;
+    display: flex;
+
+}
+
+.data-bar{
+    background-color: black;
+    color: white;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 3vh;
+}
+
+
+.data-bar h5{
+    padding-right: 2%;
+}
+.bar-title{
+    font-size: 2vmin;
+    padding-right: 1%;
+    text-align: start;
+    width: 100%;
+    
+}
+
+.option-title{
+    width: 100%;
+}
+.bar-title h5{
+    margin: 0;
+}
+
+.results-data{
+    margin-top: 5%;
+    height: 100%;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.results-body{
+    max-height: 40vh;
+}
+
+.results-data::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.results-data::-webkit-scrollbar-track {
+    background: transparent;
+    /* color of the tracking area */
+}
+
+.results-data::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    /* color of the scroll thumb */
+    /* roundness of the scroll thumb */
+}
+
+
+

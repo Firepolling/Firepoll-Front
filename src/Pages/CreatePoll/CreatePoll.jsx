@@ -2,6 +2,7 @@ import './CreatePoll.css'
 import {PollItem} from '../Components/PollItem'
 import PillBody from '../Components/Pill-Body'
 import { useState,useEffect } from 'react'
+import { useNavigate } from "react-router-dom";
 
 const axios = require('axios').default;
 
@@ -13,6 +14,7 @@ const ax_instance = axios.create({
 
 
 const CreatePoll = () =>{
+    let navigate = useNavigate();
     const [topics,setTopics] = useState(["",""])
     const [title,setTitle] = useState("Poll Title")
 
@@ -37,7 +39,6 @@ const CreatePoll = () =>{
 
     const SendPoll = async () =>{
         const json = JSON.stringify({"Title":title,"Options": topics})
-        console.log(json)
         await ax_instance.post(`/createpoll`,json,{
         headers: {
             // Overwrite Axios's automatically set Content-Type
@@ -45,9 +46,11 @@ const CreatePoll = () =>{
             }  
         })
         .then(Response=>{
-            this.props.history.push('/dashboard')
+            console.log(JSON.stringify(Response.data))
+            navigate(`/results/${Response.data}`,{replace: true})
         })
     }
+
     return(
         
             <PillBody>
