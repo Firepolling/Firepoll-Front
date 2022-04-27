@@ -16,7 +16,6 @@ const Bar = (props) =>{
                 <h5>{Math.round((props.amount / props.sum)*100)}%</h5>
             </div>
             <div style={{"width":`${width}%`}} className="data-bar">
-               
             </div>
         </div>
     )

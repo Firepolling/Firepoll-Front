@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const axios = require('axios').default;
 
 const ax_instance = axios.create({
-    baseURL: 'http://localhost:8000',
+    baseURL: 'https://api.fire-poll.com',
 });
 
 
@@ -37,8 +37,9 @@ const PollVote = (props) =>{
         fetchData();
     },[])
 
-    const postVote = () =>{
+    const postVote = async () =>{
         if(cVote !== -1){
+            await ax_instance.post(`/vote?pollID=${pollID}&Choice=${cVote}`)
             navigate(`/results/${pollID}`,{replace: true})
         }
         

@@ -8,7 +8,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 const axios = require('axios').default;
 
 const ax_instance = axios.create({
-    baseURL: 'http://localhost:8000',
+    baseURL: 'https://api.fire-poll.com',
 });
 
 const Results = () =>{
@@ -17,8 +17,8 @@ const Results = () =>{
     const [votes,setVotes] = useState([])
     const {pollID} = useParams()
 
-    useEffect(()=>{
-        const fetchData = async () =>{
+
+    const fetchData = async () =>{
             await ax_instance.get(`/getPoll?pollID=${pollID}`)
         .then((Response)=>{
             setTopics(Response.data.Options)
@@ -26,6 +26,11 @@ const Results = () =>{
             setVotes(Response.data.Vote)
         })
         }
+    const interval = setInterval(() => {
+        fetchData()
+    }, 1000*6*2); // refresh results every two minutes
+
+    useEffect(()=>{
         fetchData();
     },[])
 
@@ -39,8 +44,8 @@ const Results = () =>{
             </div>
             <div className="sharelink">
                 <h4>Share Poll: </h4>
-                <h4>https://Fire-Poll/vote/{pollID}</h4>
-                <CopyToClipboard text={`https://Fire-Poll/vote/${pollID}`}>
+                <h4>Fire-Poll.com/vote/{pollID}</h4>
+                <CopyToClipboard text={`https://fire-Poll.com/vote/${pollID}`}>
                 <button>Copy to Clipboard</button>
                 </CopyToClipboard>
             </div>
