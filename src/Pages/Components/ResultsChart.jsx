@@ -13,7 +13,7 @@ const Bar = (props) =>{
         <div className="bar-line">
             <div className="bar-title">
                 <h5 className="option-title">{props.text}</h5>
-                <h5>{Math.round((props.amount / props.sum)*100)}%</h5>
+                <h6> Votes: {props.amount} | {Math.round((props.amount / props.sum)*100)}%</h6>
             </div>
             <div style={{"width":`${width}%`}} className="data-bar">
             </div>

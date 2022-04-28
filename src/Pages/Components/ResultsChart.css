@@ -33,20 +33,20 @@
 
 
 .data-bar h5{
-    padding-right: 2%;
+    padding-right: 0%;
 }
 .bar-title{
     font-size: 2vmin;
     padding-right: 1%;
     text-align: start;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     
 }
 
-.option-title{
-    width: 100%;
-}
-.bar-title h5{
+
+.bar-title h5,h6{
     margin: 0;
 }
 
