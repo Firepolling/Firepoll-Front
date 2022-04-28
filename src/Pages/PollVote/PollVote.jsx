@@ -60,10 +60,10 @@ const PollVote = (props) =>{
                 </div>
                 <div className="submit-button">
                     <div className="">
-                        <button className="btn" onClick={postVote}>Submit and see results</button>
+                        <button className="btn-sub" onClick={postVote}>Submit and see results</button>
                     </div>
                     <div className="">
-                        <button className="btn" onClick={()=> navigate(`/results/${pollID}`,{replace: true})}>See Results w/o Voting</button>
+                        <button className="btn-sub" onClick={()=> navigate(`/results/${pollID}`,{replace: true})}>See Results w/o Voting</button>
                     </div>
                 </div>
             </div> 
