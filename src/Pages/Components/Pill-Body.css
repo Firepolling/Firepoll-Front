@@ -43,3 +43,12 @@
     margin: 5% 0%;
 }
 
+@media only screen and (max-width: 600px){
+    .poll-header{
+        height: 0vh;
+    }
+
+    .poll-main{
+        height: 85vh;
+    }
+}

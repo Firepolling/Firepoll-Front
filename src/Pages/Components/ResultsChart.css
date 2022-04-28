@@ -80,3 +80,12 @@
 
 
 
+@media only screen and (max-width: 600px){
+    .data-bar{
+        height: 1.5vh;
+    }
+
+    .bar-title{
+        font-size: 1.5vh;
+    }
+}

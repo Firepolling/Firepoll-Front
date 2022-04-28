@@ -38,7 +38,7 @@
     color: black;
     height: 4vmin;
     border-radius: 2vmax;
-    border: black 3px solid;
+    border: black .5vmin solid;
     font-size: 2vmin;
     background-color: transparent;
 }
@@ -46,9 +46,25 @@
 .button-holder button:hover{
     color: white;
     background-color: black;
-    border: 0;
+    
 }
 
 .pill-input{
     outline: none;
+}
+
+@media only screen and (max-width: 600px){
+    .options{
+        gap: .5vmax;
+    }
+    .button-holder{
+        gap: 2%;
+    }
+    .button-holder button{
+        border: black .7vmin solid;
+        height: 6vmin;
+        font-size: 3vmin;
+        
+    }
+    
 }
