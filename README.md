@@ -17,7 +17,7 @@
 <li> IP Duplicate Vote Prevention </li>
 </ul>
 
-### Whee can I find the other half?
+### Where can I find the other half?
 [Here](https://github.com/ekobedevon/Firepoll-Back)
 
 
