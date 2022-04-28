@@ -1,0 +1,8 @@
+
+
+body {
+    scrollbar-width: auto;
+    /* "auto" or "thin" */
+    scrollbar-color: var(--secondary-color) transparent;
+    /* scroll thumb and track */
+}

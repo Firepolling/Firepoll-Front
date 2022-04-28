@@ -39,7 +39,7 @@
     gap: 1vmin;
 }
 
-button {
+.btn {
     color: black;
     height: 4vh;
     border-radius: 3vh;
@@ -48,7 +48,7 @@ button {
     background-color: transparent;
 }
 
-button:hover {
+.btn:hover {
     color: white;
     background-color: black;
     border: 0;
@@ -67,7 +67,7 @@ button:hover {
 }
 
 .Vote-btn:active{
-    background-color: black;
+    background-color: var(--secondary-color);
     color: white;
 }
 .current{
@@ -81,7 +81,7 @@ button:hover {
         gap: 8%;
     }
 
-    button{
+    .btn{
         font-size: 1.5vh;
         height: 3vh;
 

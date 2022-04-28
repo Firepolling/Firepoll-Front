@@ -11,8 +11,8 @@
 .poll-title input{
     width: 60%;
     height: 70%;
-    border: black 3px;
-    color: black;
+    border: var(--secondary-color) 3px;
+    color: var(--secondary-color);
     font-size: 150%;
     text-align: center;
     background: transparent;
@@ -35,17 +35,17 @@
     gap: 5%;
 }
 .button-holder button {
-    color: black;
+    color: var(--secondary-color);
     height: 4vmin;
     border-radius: 2vmax;
-    border: black .5vmin solid;
+    border: var(--secondary-color) .5vmin solid;
     font-size: 2vmin;
     background-color: transparent;
 }
 
 .button-holder button:hover{
     color: white;
-    background-color: black;
+    background-color: var(--secondary-color);
     
 }
 
@@ -61,7 +61,7 @@
         gap: 2%;
     }
     .button-holder button{
-        border: black .7vmin solid;
+        border: var(--secondary-color) .7vmin solid;
         height: 6vmin;
         font-size: 3vmin;
         

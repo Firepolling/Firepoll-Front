@@ -1,4 +1,5 @@
 import './Pill-Body.css'
+import ThemePicker from './ThemePicker';
 
 
 
@@ -7,6 +8,7 @@ const PillBody = (props) =>{
     return(
         <div className="page">
             <div className="poll-header">
+                <ThemePicker/>
             </div>
             <div className="poll-main">
                 <div className="title">

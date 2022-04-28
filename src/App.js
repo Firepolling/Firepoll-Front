@@ -5,6 +5,7 @@ import Results from './Pages/Results/Results';
 import ApexCharts from 'apexcharts'
 import './App.css';
 
+
 function App() {
   return (
     <main>
