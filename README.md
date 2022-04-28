@@ -15,6 +15,7 @@
 <li> Poll Share </li>
 <li> Poll Results View </li>
 <li> IP Duplicate Vote Prevention </li>
+<li> Persistant Themes </li>
 </ul>
 
 ### Where can I find the other half?
