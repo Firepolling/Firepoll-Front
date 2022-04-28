@@ -1,4 +1,5 @@
 .poll-title {
+    color: var(--secondary-color);
     height: 10%;
     width: 100%;
     display: flex;
@@ -7,10 +8,11 @@
 }
 
 .poll-title input {
+    
     width: 60%;
     height: 70%;
-    border: black 3px;
-    color: black;
+    border: var(--secondary-color) 3px;
+    color: var(--secondary-color);
     font-size: 150%;
     text-align: center;
     background: transparent;
@@ -40,30 +42,32 @@
 }
 
 .btn {
-    color: black;
+    color: var(--secondary-color);
     height: 4vh;
     border-radius: 3vh;
-    border: black 3px solid;
+    border: var(--secondary-color) 3px solid;
     font-size: 1.8vmin;
     background-color: transparent;
 }
 
 .btn:hover {
     color: white;
-    background-color: black;
+    background-color: var(--secondary-color);
     border: 0;
 }
 
 .Vote-btn{
+    color: var(--secondary-color);
     background-color: transparent;
     width:80%;
     border-radius: 1vmin;
+    border: var(--secondary-color) 3px solid;
 }
 
 .Vote-btn:hover{
-    background-color: white;
-    color: black;
-    border: black 3px solid;
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--secondary-color) 3px solid;
 }
 
 .Vote-btn:active{
@@ -72,6 +76,7 @@
 }
 .current{
     margin: 0;
+    color: var(--secondary-color);
 }
 
 @media only screen and (max-width: 600px) {

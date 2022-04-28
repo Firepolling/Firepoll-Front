@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: var(--secondary-color);
 }
 
 h2{
@@ -31,4 +32,19 @@ h4{
     h2 {
         font-size: 4vmin;
     }
+}
+
+.btn {
+    color: var(--secondary-color);
+    height: 4vh;
+    border-radius: 3vh;
+    border: var(--secondary-color) 3px solid;
+    font-size: 1.8vmin;
+    background-color: transparent;
+}
+
+.btn:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 0;
 }

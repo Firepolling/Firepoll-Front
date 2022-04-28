@@ -46,7 +46,7 @@ const Results = () =>{
                 <h4>Share Poll: </h4>
                 <h5>Fire-Poll.com/vote/{pollID}</h5>
                 <CopyToClipboard text={`https://fire-Poll.com/vote/${pollID}`}>
-                <button>Copy to Clipboard</button>
+                <button className='btn'>Copy to Clipboard</button>
                 </CopyToClipboard>
             </div>
         </PillBody>
