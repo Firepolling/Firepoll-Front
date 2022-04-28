@@ -1,3 +1,64 @@
+
+
+.theme-bar{
+    display: flex;
+}
+.setter-holder{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.theme-setter{
+    color: var(--secondary-color);
+    background-color: transparent;
+    border: none;
+    font-size: 6vh;
+}
+
+.semi-circle{
+    
+    height: 4vh;
+    width: 8vh;
+    border-radius: 6vh 6vh 0vh 0;
+}
+
+
+
+.theme-btn-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
 .theme-btn{
-    outline: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.theme-holder{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2vh;
+}
+
+
+.flipped{
+    transform:rotate(180deg);
+}
+
+.turn{
+    transform: rotate(30deg);
+}
+
+@media only screen and (min-width: 1440px){
+    .semi-circle {
+        height: 2vh;
+        width: 4vh;
+        border-radius: 3vh 3vh 0vh 0;
+    }
+    .theme-setter{
+        font-size: 3vh;
+    }
 }

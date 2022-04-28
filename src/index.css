@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(2, 0, 36);
-  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(48, 48, 48, 1) 100%);
+  background: var(--secondary-color);
+  background: radial-gradient(circle,  var(--secondary-color) 0%,var(--primary-color) 130%);
 }
 
 :root {
