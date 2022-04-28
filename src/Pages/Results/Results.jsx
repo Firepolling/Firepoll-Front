@@ -28,7 +28,7 @@ const Results = () =>{
         }
     const interval = setInterval(() => {
         fetchData()
-    }, 1000*6*2); // refresh results every two minutes
+    }, 1000*60*2); // auto refresh results every 2 minutes
 
     useEffect(()=>{
         fetchData();
