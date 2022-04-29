@@ -16,6 +16,8 @@
 <li> Poll Results View </li>
 <li> IP Duplicate Vote Prevention </li>
 <li> Persistant Themes </li>
+<li> Null Option Filtering </li>
+<li> Dynamic Poll Option Creation </li>
 </ul>
 
 ### Where can I find the other half?
