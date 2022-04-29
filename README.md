@@ -15,7 +15,7 @@
 <li> Poll Share </li>
 <li> Poll Results View </li>
 <li> IP Duplicate Vote Prevention </li>
-<li> Persistant Themes </li>
+<li> Persistent Themes </li>
 <li> Null Option Filtering </li>
 <li> Dynamic Poll Option Creation </li>
 </ul>
