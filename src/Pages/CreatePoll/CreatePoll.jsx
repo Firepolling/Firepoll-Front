@@ -18,7 +18,7 @@ const CreatePoll = () =>{
     let navigate = useNavigate();
     const [topics,setTopics] = useState(["",""])
     const [title,setTitle] = useState("Poll Title")
-    const [showError,setShowError] = useState("")
+    const [showError,setShowError] = useState(false)
 
     const updateText = (id,text) =>{
         let newTopics = [...topics]
@@ -39,7 +39,7 @@ const CreatePoll = () =>{
         }
     }
     useEffect(()=>{
-        setShowError("")
+        setShowError(false)
         if(topics[topics.length-1] !== "") // if the last option is not empty
         {
             updateTopics(true);
@@ -67,7 +67,7 @@ const CreatePoll = () =>{
             navigate(`/results/${Response.data}`,{replace: true})
         })}
         else{
-            setShowError("Error: Poll must have atleast 2 elements!")
+            setShowError(true)
         }
     }
 
@@ -83,7 +83,8 @@ const CreatePoll = () =>{
                     })}
                     </div>
                     <div className="poll-title">
-                        <h5>{showError}</h5>
+                        
+                        <h5>{showError ? "Error: Poll must have atleast 2 elements!" : "Blank options are discarded upon poll creation"}</h5>
                     </div>
                     <div className="button-holder">
                         <button onClick={()=>SendPoll()}>Create Poll</button>
