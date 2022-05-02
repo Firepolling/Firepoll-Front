@@ -53,7 +53,7 @@ const CreatePoll = () =>{
 
     const SendPoll = async () =>{
         const pollTopics = topics.filter(choice => choice.length > 0)
-        if(pollTopics.length > 2) // if there is not atleast 2 options
+        if(pollTopics.length >= 2) // if there is not atleast 2 options
         {
         const json = JSON.stringify({"Title":title,"Options": pollTopics})
         await ax_instance.post(`/createpoll`,json,{
